@@ -1,0 +1,23 @@
+         <?php 
+	session_start();
+	include("connect.php");
+	if(isset($_POST['b1']))
+		{
+$q = mysql_query("select * from admin
+				   where uname = '".$_POST['t1']."' 
+					  and
+				    upass = '".$_POST['t2']."' ");	
+ $num = mysql_num_rows($q);
+	if($num>0)
+		{
+				$row = mysql_fetch_array($q);	
+				$_SESSION['sid'] = $row[0];
+				$_SESSION['sname'] = $row[1];
+				header("location:products.php");
+				exit();
+		}else
+		{
+		
+		}
+ }
+?>

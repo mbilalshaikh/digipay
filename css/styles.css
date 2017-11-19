@@ -1,0 +1,26 @@
+.bg_img{
+	background-image: ../images/bgimg.jpg;
+}
+
+form input[type="text"]{
+	  margin-bottom: 10px;
+}
+form input{
+      margin-bottom: 10px;      
+}
+form input[type="password"] {
+  margin-bottom: 20px;
+}
+
+form button[type="submit"] {
+    float: left;
+    width: 90px;
+    height: 32px;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    margin-top: 0px;
+    border-radius: 3px;
+    background: #5bbd50;
+}
